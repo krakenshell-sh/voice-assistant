@@ -1,0 +1,19 @@
+# ══════════════════════════════════════════════════════════════════════════
+#  Voice Assistant — Python dependencies
+#  Install:  pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════════════
+
+# ── required ──────────────────────────────────────────────────────────────
+SpeechRecognition>=3.10.0   # Google STT + Sphinx wrapper
+sounddevice>=0.4.6          # PortAudio bindings (visualizer stream)
+numpy>=1.24.0               # FFT, array ops
+
+# ── optional: text-to-speech ──────────────────────────────────────────────
+# pyttsx3 is the primary TTS engine.
+# If absent, the assistant falls back to espeak-ng (system package).
+pyttsx3>=2.90
+
+# ── optional: offline speech recognition ──────────────────────────────────
+# Used automatically when the Google STT API is unreachable.
+# Requires:  sudo pacman -S swig  (before pip install)
+pocketsphinx>=5.0.0
