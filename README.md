@@ -5,8 +5,8 @@ visualizer, text-to-speech feedback, and automatic offline STT fallback.
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║                    VOICE ASSISTANT  ·  Arch Linux                     ║
-║       CAVA FFT Visualizer  ·  TTS Feedback  ·  Offline STT            ║
+║                    VOICE ASSISTANT  ·  Arch Linux                      ║
+║       CAVA FFT Visualizer  ·  TTS Feedback  ·  Offline STT               ║
 ╚════════════════════════════════════════════════════════════════════════╝
 
   [ INFO ] Calibrating microphone (2 sec)...
@@ -158,10 +158,10 @@ Filler words (`please`, `hey`, `okay`, `system`, etc.) are stripped automaticall
 
 | Phrase            | Action                             | Exits? |
 |:------------------|:-----------------------------------|:------:|
-| `shut down`       | systemctl poweroff (5-sec warning) | yes    |
+| `shut down`       | systemctl poweroff (5-sec warning)  | yes    |
 | `restart`         | systemctl reboot (5-sec warning)   | yes    |
 | `hibernate`       | systemctl hibernate (5-sec warning)| yes    |
-| `open firefox`    | Launches Firefox                   | no     |
+| `open firefox`     | Launches Firefox                   | no     |
 | `open terminal`   | Launches Kitty terminal            | no     |
 | `update`          | Runs sudo pacman -Syu              | no     |
 
